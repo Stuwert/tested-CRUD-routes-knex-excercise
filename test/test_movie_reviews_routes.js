@@ -27,7 +27,7 @@ describe('Reviews CRUD Routes', function() {
       done();
     });
   });
-  xit('should GET /movies/:movie_id/reviews/:id', function (done) {
+  it('should GET /movies/:movie_id/reviews/:id', function (done) {
     chai.request(server).get('/movies/2/reviews/1')
     .end(function (err, res) {
       res.should.have.status(200);
