@@ -48,7 +48,7 @@ describe('Reviews CRUD Routes', function() {
       done();
     });
   });
-  xit('should POST to /movies/:movie_id/reviews/:id/delete', function (done) {
+  it('should POST to /movies/:movie_id/reviews/:id/delete', function (done) {
     chai.request(server).post('/movies/2/reviews/1/delete')
     .end(function (err, res) {
       res.should.have.status(200);

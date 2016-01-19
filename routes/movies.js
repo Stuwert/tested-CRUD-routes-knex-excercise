@@ -55,4 +55,8 @@ router.post('/:movie_id/reviews/:id', function(req, res, next){
   res.redirect('/movies/' + req.params.movie_id + '/reviews')
 })
 
+router.post('/:movie_id/reviews/:id/delete', function(req, res, next){
+  res.redirect('/movies/' + req.params.movie_id + '/reviews')
+})
+
 module.exports = router;
