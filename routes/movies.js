@@ -31,5 +31,9 @@ router.post('/:id/delete', function(req, res, next){
   res.redirect('/')
 })
 
+router.get('/:movie_id/reviews', function(req, res, next){
+  res.render('movies/reviews/show')
+})
+
 
 module.exports = router;
