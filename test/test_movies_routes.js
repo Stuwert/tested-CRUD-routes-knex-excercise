@@ -48,7 +48,7 @@ describe('Movies CRUD Routes', function() {
       done();
     });
   });
-  xit('should POST /movies/:id/delete', function (done) {
+  it('should POST /movies/:id/delete', function (done) {
     chai.request(server).post('/movies/2/delete')
     .end(function (err, res) {
       res.should.have.status(200);

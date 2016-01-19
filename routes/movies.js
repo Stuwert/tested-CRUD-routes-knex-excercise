@@ -27,5 +27,9 @@ router.post('/:id', function(req, res, next){
   res.redirect('/movies/' + req.params.id)
 })
 
+router.post('/:id/delete', function(req, res, next){
+  res.redirect('/')
+})
+
 
 module.exports = router;
