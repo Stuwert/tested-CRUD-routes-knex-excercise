@@ -35,5 +35,9 @@ router.get('/:movie_id/reviews', function(req, res, next){
   res.render('movies/reviews/show')
 })
 
+router.get('/:movie_id/reviews/new', function(req, res, next){
+  res.render('movies/reviews/new')
+})
+
 
 module.exports = router;
