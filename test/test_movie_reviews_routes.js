@@ -20,7 +20,7 @@ describe('Reviews CRUD Routes', function() {
       done();
     });
   });
-  xit('should POST /movies/:movie_id/reviews', function (done) {
+  it('should POST /movies/:movie_id/reviews', function (done) {
     chai.request(server).post('/movies/3/reviews')
     .end(function (err, res) {
       res.should.have.status(200);

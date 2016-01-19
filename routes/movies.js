@@ -39,5 +39,8 @@ router.get('/:movie_id/reviews/new', function(req, res, next){
   res.render('movies/reviews/new')
 })
 
+router.post('/:movie_id/reviews', function(req, res, next){
+  res.redirect('/movies/' + req.params.movie_id + '/reviews')
+})
 
 module.exports = router;
