@@ -51,4 +51,8 @@ router.get('/:movied_id/reviews/:id/edit', function(req, res, next){
   res.render('movies/reviews/edit')
 })
 
+router.post('/:movie_id/reviews/:id', function(req, res, next){
+  res.redirect('/movies/' + req.params.movie_id + '/reviews')
+})
+
 module.exports = router;
